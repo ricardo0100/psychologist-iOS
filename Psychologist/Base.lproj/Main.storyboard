@@ -36,10 +36,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmj-dZ-GC8">
-                                <rect key="frame" x="239" y="326" width="122" height="36"/>
+                                <rect key="frame" x="234" y="326" width="132" height="36"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Florest on fire"/>
+                                <state key="normal" title="Florests on fire"/>
                                 <connections>
                                     <segue destination="55K-jh-RED" kind="showDetail" identifier="florests on fire" id="0pj-ls-PRH"/>
                                 </connections>
