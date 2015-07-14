@@ -8,17 +8,31 @@
 
 import UIKit
 
-class PsychologistViewController: UIViewController {
+class PsychologistViewController: UIViewController
+{
+    @IBAction func nothing(sender: UIButton) {
+        performSegueWithIdentifier("nothing", sender: self)
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let fvc = segue.destinationViewController as? FaceViewController {
+        var destination: UIViewController?
+        destination = segue.destinationViewController
+        
+        if let navCon = destination as? UINavigationController {
+            destination = navCon.visibleViewController
+        }
+        
+        if let fvc = destination as? FaceViewController {
             if let identifier = segue.identifier {
                 switch identifier {
                 case "megazords": fvc.hapiness = 100
+                case "nothing": fvc.hapiness = 40
                 case "florests on fire": fvc.hapiness = 0
                 default: fvc.hapiness = 50
                 }
             }
         }
     }
+    
 }
 
