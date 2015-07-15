@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C345E191B55F07D00E6C05E /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C345E181B55F07D00E6C05E /* TextViewController.swift */; };
 		8CD120D21B55284300D10924 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD120D11B55284300D10924 /* AppDelegate.swift */; };
 		8CD120D41B55284300D10924 /* PsychologistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD120D31B55284300D10924 /* PsychologistViewController.swift */; };
 		8CD120D71B55284300D10924 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CD120D51B55284300D10924 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C345E181B55F07D00E6C05E /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		8CD120CE1B55284300D10924 /* Psychologist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Psychologist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CD120D11B55284300D10924 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CD120D31B55284300D10924 /* PsychologistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsychologistViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				8CD120D11B55284300D10924 /* AppDelegate.swift */,
 				8CD120DA1B55284300D10924 /* LaunchScreen.storyboard */,
 				8CD120DD1B55284300D10924 /* Info.plist */,
+				8C345E181B55F07D00E6C05E /* TextViewController.swift */,
 			);
 			path = Psychologist;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C345E191B55F07D00E6C05E /* TextViewController.swift in Sources */,
 				8CD120E51B552B1900D10924 /* FaceViewController.swift in Sources */,
 				8CD120D41B55284300D10924 /* PsychologistViewController.swift in Sources */,
 				8CD120D21B55284300D10924 /* AppDelegate.swift in Sources */,
@@ -293,6 +297,7 @@
 				8CD120E21B55284300D10924 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -110,6 +110,44 @@
             </objects>
             <point key="canvasLocation" x="-158" y="745"/>
         </scene>
+        <!--Text View Controller-->
+        <scene sceneID="Qx7-sx-qUc">
+            <objects>
+                <viewController id="ayb-52-NPb" customClass="TextViewController" customModule="Psychologist" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IXN-ul-4ml"/>
+                        <viewControllerLayoutGuide type="bottom" id="JaO-yR-Ie8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="56i-C2-iH0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mzz-h8-Nd1">
+                                <rect key="frame" x="20" y="28" width="560" height="552"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mzz-h8-Nd1" firstAttribute="leading" secondItem="56i-C2-iH0" secondAttribute="leadingMargin" id="ENK-bI-rrv"/>
+                            <constraint firstItem="mzz-h8-Nd1" firstAttribute="trailing" secondItem="56i-C2-iH0" secondAttribute="trailingMargin" id="HDW-Ut-kM1"/>
+                            <constraint firstAttribute="bottom" secondItem="mzz-h8-Nd1" secondAttribute="bottom" constant="20" symbolic="YES" id="Lg1-n7-uhw"/>
+                            <constraint firstItem="mzz-h8-Nd1" firstAttribute="top" secondItem="IXN-ul-4ml" secondAttribute="bottom" constant="8" symbolic="YES" id="c5T-yJ-n6n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="mzz-h8-Nd1" id="wjp-gA-jBP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QX0-Io-73A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1966" y="387"/>
+        </scene>
         <!--Face View Controller-->
         <scene sceneID="AIw-5U-8M0">
             <objects>
@@ -152,7 +190,15 @@
                             <constraint firstItem="BVL-3L-fEF" firstAttribute="bottom" secondItem="I5a-sf-y6M" secondAttribute="top" id="aP3-cL-uYN"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="jq4-Jv-xOc"/>
+                    <navigationItem key="navigationItem" id="jq4-Jv-xOc">
+                        <barButtonItem key="rightBarButtonItem" title="History" id="QNs-iP-Q6e">
+                            <connections>
+                                <segue destination="ayb-52-NPb" kind="popoverPresentation" identifier="history" popoverAnchorBarButtonItem="QNs-iP-Q6e" id="1pO-XY-D5I">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="faceView" destination="BVL-3L-fEF" id="jeO-LZ-i3y"/>
                     </connections>
